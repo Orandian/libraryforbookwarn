@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: url(./img/jez-timms-8muUTAmcWU4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 10px;
+    font-size: 4rem;
+    color: #fff;
+}
+.searchContainer{
+    margin-top: 20px;
+    position: relative;
+    width: 600px;
+    height: 40px;
+}
+.search{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.bx-search{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    z-index: 2;
+}
+.bookResult{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 210px;
+    overflow-y: auto;
+}
+.bookResult::-webkit-scrollbar{
+    display: none;
+}
+.bookResult li{
+    padding: 0px 10px;
+    margin: 10px;
+    border-left: 2px solid #fff;
+}
+.bookResult li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.text{
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+pre{
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    color: #fff;
+    font-size: 0.5rem;
+}
+pre a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 370px){
+    body{
+        overflow: hidden;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .searchContainer{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 768px){
+    .searchContainer{
+        width: 400px;
+    }
+}
