@@ -84,19 +84,27 @@ pre a{
     text-decoration: none;
     color: #fff;
 }
-@media screen and (max-width: 370px){
-    body{
-        overflow: hidden;
-    }
-    h1{
-        font-size: 3rem;
-    }
-    .searchContainer{
-        width: 300px;
-    }
-}
 @media screen and (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
     .searchContainer{
-        width: 400px;
+        width: 80%;
+    }
+    .search{
+        padding: 5px 50px;
+    }
+    .bx-search{
+        top: 5px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .bookResult{
+        max-height: 210px;
+    }
+    .bookResult li a{
+        font-size: 1rem;
     }
 }
+
